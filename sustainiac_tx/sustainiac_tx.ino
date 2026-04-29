@@ -11,8 +11,8 @@
   Example buttons:
   BTN1 = Passive
   BTN2 = Sustain
-  BTN3 = Harmonic
-  BTN4 = Blend
+  BTN3 = Blend
+  BTN4 = Harmonic
 */
 
 const int tx_pin = 7;     // Data pin to OOK transmitter module
@@ -55,14 +55,15 @@ void loop() {
   }
 
   else if (digitalRead(btn3) == LOW) {
-    sendCommand(pulse_harmonic);
+    sendCommand(pulse_blend);
     delay(150);
   }
 
   else if (digitalRead(btn4) == LOW) {
-    sendCommand(pulse_blend);
+    sendCommand(pulse_harmonic);
     delay(150);
   }
+
 }
 
 

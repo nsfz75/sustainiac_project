@@ -33,3 +33,11 @@ The receiver supports four Sustainiac operating states:
 | Blend | Mixed sustain mode |
 
 ---
+
+## Hardware Render
+
+### Sustainiac Guard
+![3D rendering of Sustainiac Guard](assets/sustainiac_rx_guard.gif)
+
+### Sustainiac Box
+![3D rendering of Sustainiac Box](assets/sustainiac_tx_box.gif)
