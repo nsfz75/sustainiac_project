@@ -37,6 +37,16 @@ The project consists of:
 
 ---
 
+## System Context
+
+This project interfaces with a Sustainiac pickup system, which provides multiple feedback-based operating modes (sustain, harmonic, blend).
+
+The underlying behaviour of these modes is demonstrated here:
+
+https://www.youtube.com/watch?v=g7U48UkLwyM
+
+---
+
 ## Operation
 
 The transmitter generates encoded **OOK (On-Off Keying) / ASK (Amplitude Shift Keying)** pulse signals using a low-cost RF module.
