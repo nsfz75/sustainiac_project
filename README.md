@@ -58,6 +58,16 @@ These commands drive MOSFET-controlled outputs connected to the Sustainiac syste
 
 ---
 
+## PCB Design
+
+### Transmitter PCB
+![Sustainiac Box (TX) PCB](assets/sustainiac_tx_pcb.png)
+
+### Receiver PCB
+![Sustainiac Guard (RX) PCB](assets/sustainiac_rx_pcb.png)
+
+---
+
 ## Hardware Render
 
 ### Sustainiac Guard
