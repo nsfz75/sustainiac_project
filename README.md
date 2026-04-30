@@ -63,8 +63,44 @@ These commands drive MOSFET-controlled outputs connected to the Sustainiac syste
 ### Transmitter PCB
 ![Sustainiac Box (TX) PCB](assets/sustainiac_tx_pcb.png)
 
+#### PCB Design Specifications
+
+- Powered from a 12V pedalboard supply
+- Designed for compact integration within a pedalboard-mounted enclosure
+- Enclosure mechanically reinforced for foot-switch environment and live use durability
+- Short-range OOK/ASK RF link optimised for reliable command transmission between transmitter and receiver units
+- System implements a **failsafe Passive mode** on signal loss, power-down, or invalid transmission state
+
+#### Design considerations
+- Mechanical robustness for stage/pedalboard use
+- Stable operation from shared 12V power environment
+- Deterministic fallback behaviour (Passive mode default state)
+- Reliable short-range RF command delivery with minimal latency
+
+---
+
 ### Receiver PCB
 ![Sustainiac Guard (RX) PCB](assets/sustainiac_rx_pcb.png)
+
+#### PCB Design Specifications
+
+- Highly constrained power budget due to Sustainiac system current consumption
+- Designed around a low-power microcontroller (e.g. ATtiny85) with OOK/ASK RF receiver module
+- Integrated within guitar cavity/backplate with battery-powered operation
+
+#### Power optimisation strategy
+
+- Deep-sleep modes used during idle periods
+- Interrupt-driven wake on RF signal detection
+- Minimal active duty cycle for decoding and mode switching
+- Efficient MOSFET gate control to reduce switching losses
+- System prioritises battery life preservation alongside real-time responsiveness
+
+#### Design considerations
+- Coexistence with high-current Sustainiac electronics
+- Strict power efficiency requirements for battery-powered operation
+- Reliable wake-up from RF events with minimal false triggers
+- Robust operation in electrically noisy guitar environment
 
 ---
 
