@@ -121,3 +121,5 @@ These commands drive MOSFET-controlled outputs connected to the Sustainiac syste
 
 ### Sustainiac Box
 ![3D rendering of Sustainiac Box](assets/sustainiac_tx_box.gif)
+
+![](assets/sustainiac_tx_box_render.png)
